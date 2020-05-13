@@ -1,9 +1,9 @@
-from ssa_interp import __label__, __phi__
+from ssa_interp import __label__, __phi__, __undef__
 
 
 __label__("l0")
 # All vars should be initialized
-x0 = x1 = None
+x0 = x1 = __undef__
 
 a0 = 0
 
