@@ -1,4 +1,12 @@
-__all__ = ("__label__", "__phi__")
+__all__ = ("__label__", "__phi__", "__undef__")
+
+
+class Undef:
+    def __repr__(self):
+        return "__undef__"
+
+
+__undef__ = Undef()
 
 
 _prelast_bblock = None
