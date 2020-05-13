@@ -14,8 +14,6 @@ else:
     __label__("l2")
     x1 = 2
 
-# Crucial point - __phi__'s really should be first "instructions" of
-# the basic block, even before a label.
-x2 = __phi__({"l1": x0, "l2": x1})
 __label__("l3")
+x2 = __phi__({"l1": x0, "l2": x1})
 print(x2)
